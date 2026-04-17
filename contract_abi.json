@@ -11,6 +11,12 @@
 			{
 				"indexed": false,
 				"internalType": "string",
+				"name": "fileName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
 				"name": "ipfsHash",
 				"type": "string"
 			},
@@ -33,6 +39,11 @@
 			},
 			{
 				"internalType": "string",
+				"name": "_fileName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
 				"name": "_ipfsHash",
 				"type": "string"
 			}
@@ -50,30 +61,6 @@
 				"type": "string"
 			}
 		],
-		"name": "getLatestLog",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_deviceId",
-				"type": "string"
-			}
-		],
 		"name": "getLogs",
 		"outputs": [
 			{
@@ -81,6 +68,11 @@
 					{
 						"internalType": "string",
 						"name": "ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fileName",
 						"type": "string"
 					},
 					{

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
@@ -12,6 +12,12 @@
 						"indexed": true,
 						"internalType": "string",
 						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "fileName",
 						"type": "string"
 					},
 					{
@@ -38,30 +44,6 @@
 						"type": "string"
 					}
 				],
-				"name": "getLatestLog",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_deviceId",
-						"type": "string"
-					}
-				],
 				"name": "getLogs",
 				"outputs": [
 					{
@@ -69,6 +51,11 @@
 							{
 								"internalType": "string",
 								"name": "ipfsHash",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "fileName",
 								"type": "string"
 							},
 							{
@@ -99,6 +86,11 @@
 					},
 					{
 						"internalType": "string",
+						"name": "_fileName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
 						"name": "_ipfsHash",
 						"type": "string"
 					}
@@ -112,9 +104,6 @@
 		"devdoc": {
 			"kind": "dev",
 			"methods": {
-				"getLatestLog(string)": {
-					"details": "Lấy entry mới nhất của 1 device"
-				},
 				"getLogs(string)": {
 					"details": "Lấy DS các hash của 1 device"
 				}
@@ -131,7 +120,7 @@
 		"compilationTarget": {
 			"LogManager.sol": "LogProvider"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -144,11 +133,11 @@
 	},
 	"sources": {
 		"LogManager.sol": {
-			"keccak256": "0x883e643fd08b2f58266577e7a169325ad9f1a34af57cbbfd940b124d5c177063",
+			"keccak256": "0xa0ecec45c0ff07ebcb7c5032ec55800c841c2af6d2a36cb865d594112cdc8abc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2ffb34741083d95b0fb27b8c9d20d52083dc87e4f567973e812c01c92ca34a62",
-				"dweb:/ipfs/QmThgrBKzR2rZdYpeEN66uN2EBXJPfPgZMMJDpHx11SM9k"
+				"bzz-raw://75135648b12ddc7a1d520bfb351948957db40bac21e06c9a6d08358c7fa7bed6",
+				"dweb:/ipfs/QmdUa5xnyu3ZBUqJSjHCkTefxdLwsTYZKBUNzU1rsc8ha8"
 			]
 		}
 	},
